@@ -1,0 +1,28 @@
+<h2>Países</h2>
+<hr>
+
+<!-- Para transformar este list item en un routerlink: routerLink=" nombre del path definido en el app-routing.module.ts" -->
+<!-- Para que quede seleccionado el <li> que hemos clicado añade routerLinkActive="active" -->
+<!-- [routerLinkActiveOptions]="{ exact: true }" lo usa para decirle que tiene que ser exactamente el path con sus segmentos. Cualquier otra cosa que no cumpla sintacticamente no lo va a aplicar -->
+<ul class="list-group">
+
+  <li routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item">
+    Home Page
+  </li>
+
+  <li routerLink="about"
+    routerLinkActive="active"
+    class="list-group-item">
+    About Page
+  </li>
+
+  <li routerLink="contact"
+  routerLinkActive="active"
+  class="list-group-item">
+  Contact Page
+</li>
+
+</ul>
